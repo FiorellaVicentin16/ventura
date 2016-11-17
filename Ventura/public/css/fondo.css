@@ -1,0 +1,69 @@
+body, html {height: 100%}
+.bgimg-1 {
+    background-image: url('../images/HomeVentura.png');
+    min-height: 100%;
+    background-position:center;
+    background-size:cover;
+
+}
+nav.navbar {
+    background-color: #FBDBB4;
+}
+
+color
+
+
+
+.inline-block{
+	float:none;
+	display: inline-block;
+	margin-right:-4px;	
+}
+
+.espacio-left{
+
+	margin-left:60px; 
+}
+	
+
+.espacio-arriba{
+
+	margin-top:35px;
+}
+.margen-div-bt{
+	margin-top: 50px;
+}
+.margen-top-bt{
+	margin-top:35px;
+}
+.grande{
+	font-size: 6em;
+	}
+.mediano{
+	font-size: 2em;
+}
+.pequenio{
+	font-size: 1.5em;
+}
+
+.quitar-float{
+	float: none;  /*Me ubica dentro de los Layout de bootstrap*/
+}
+.margen-derecho{
+	margin-right: 2em;
+}
+
+}
+.inline-block{
+	float:none;
+	display: inline-block;
+	margin-right:-4px;	
+}
+.anda-arriba{
+	margin-top: 0px;  /*vertical-align sirve unicamente cuando esta definido en nuestra class en HTML inline-block*/
+}
+
+.padding-largo{
+	padding: 12px 23px;
+}
+
