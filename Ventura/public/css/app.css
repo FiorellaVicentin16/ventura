@@ -59,6 +59,16 @@
             margin-top:0px;
             padding-top:5px;
     }
+ .celeste{
+ 	color:#3399CC;
+ }
+ .rojo{
+ 	color:#FF0033;
+ }
+ .amarillo{
+ 	color:#FFCC00;
+ }
+
 .top-centro{
 	top:50%;
 	float:center;
@@ -116,7 +126,12 @@ color:#F5874E
 .verde{
 	color:#7AA15C
 }
-
+.verdesito{
+	color:#0E9910;
+}
+.black{
+	color:#131313;
+}
 .contenedor-div{
     	position:relative;
 }
@@ -142,6 +157,7 @@ color:#F5874E
 	color:white;
 	padding:.5em 0;
 }
+
 .boton1{
 	width:150px;
 	position:relative;
@@ -158,11 +174,7 @@ color:#F5874E
 	color:white;
 	padding:.5em ;
 }
-.menues{
-    background-image: url('../images/FondoMenu.png');
-    height: 100%;
-    background-size: cover;
-}
+
 
 
 #sidebar-wrapper {
@@ -294,34 +306,37 @@ color:#F5874E
 
 }
 #container{
-	width:300px;
-	height: 750px;
+	width:80%;
+	height:80%;
 	margin: 0px auto;
 }
-
-#menu{
-	height: 300px;
-	width: 300px;
+.menues{
+    height: 600px;
+	width: 600px;
+   
 }
+	   
 
 #centro{
+	
 	background-image: url('../images/foco.png');
 	background-repeat: no-repeat;
-	background-position: center center; 
-	height: 500px;
-	position: relative;
+	background-position:center; 
+	height: 680px;
 	width: 300px;
-	margin-top:150px;
+	padding-right:100px;
+	margin-left:530px;
 
 
-}
+	}
+
 
 .item{
 	
-	height: 100px;
+	height: 300px;
 	position: absolute;
 	width: 100px;
-	margin: 100px;
+	margin: 200px;
 	opacity: 0;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -335,15 +350,15 @@ color:#F5874E
 }
 .item img{
 	border: 0;
-	margin: 0px;
+	margin-top:150px;
 }
 .item a{
 	text-decoration: none;
 }
 .titulo{
 	background-color:white;
-	color: green;
-	font-family:Lato-Heavy;
+	color:#0E9910;
+	font-family:Lato;
 	margin-top:-125px;
 	opacity: 0;
 	
@@ -383,5 +398,72 @@ color:#F5874E
 /* Plasticos */
 #centro:hover .item:nth-child(5){
 	margin: 290px 0 0 350px;
+}
+
+.fondoCategorias{
+	min-height: 100%;
+    background-position:center;
+    background-size:cover;
+}
+
+
+
+
+.fondoBateria {
+    background-image: url('../images/FondoBateria.png');
+    
+}
+.fondoPapel {
+    background-image: url('../images/FondoPapel.png');
+ 
+
+}
+.fondoPlastico {
+    background-image: url('../images/FondoPlastico.png');
+  
+
+}
+.fondoVidrio {
+    background-image: url('../images/FondoVidrio.png');
+  
+
+}
+.fondoOrganico {
+    background-image: url('../images/FondoOrganico.png');
+  
+
+}
+.Botton{
+
+        font-size:15px;
+        font-family:Lato,Regular;
+        font-weight:bold;
+        color:white;
+        width:80px;
+        height:19px;
+      }
+.Bottonbateria {
+    background-image: url('/images/Buttonbateria.png');
+    
+}
+.Bottonpapel {
+    background-image: url('/images/Buttonpapel.png');
+ 
+
+}
+.Bottonplastico {
+    background-image: url('/images/Buttonplastico.png');
+  
+
+}
+.Bottonvidrio {
+    background-image: url('/images/Buttonvidrio.png');
+  
+
+}
+.Bottonorganico {
+    background-image: url('/images/Buttonorganico.png');
+  
+
 }
 

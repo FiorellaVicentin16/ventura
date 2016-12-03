@@ -9,10 +9,15 @@ class pregunta extends Model
     protected $table ='pregunta'; 
     public $timestamps=false;
 
-    function Categoria()
+    public function respuestas()
 {
    return $this->hasMany('App\respuesta');
 }
+
+ function categoria()
+ {
+ 	return $this->belongsTo('App\categoria');
+ }
 }
 
 

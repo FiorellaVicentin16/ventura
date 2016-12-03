@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\pregunta as pregunta;
+
+use App\respuesta as respuesta;
+
+use App\categoria as categoria;
+
 class menucontroller extends Controller
 {
     /**
@@ -15,7 +21,12 @@ class menucontroller extends Controller
      */
     public function index()
     {
-         return view("inicio.menu");
+        $categoria=categoria::all();
+         
+         return view("inicio.menu",['categorias'=>$categoria]);
+
+
+
     }
 
     /**
@@ -25,7 +36,7 @@ class menucontroller extends Controller
      */
     public function create()
     {
-        //
+        $papel=pregunta::where('pregunta_id')->get();
     }
 
     /**

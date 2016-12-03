@@ -19,12 +19,11 @@ Route::resource('/Contacto','Contacto@index');
 Route::resource('/reglas','reglascontroller@index');
 Route::resource('/juego','bienvenidoscontroller@create');
 Route::resource('/menu','menucontroller@index');
+Route::get('/categoria/{id}/preguntas',["uses"=>"PreguntaController@index","as"=>"categoria"]);
+Route::post('/respuesta',["uses"=>"PreguntaController@formPreguntas","as"=>"respuesta"]);
+Route::get('/ganaste',["uses"=>"PreguntaController@ganaste"]);
 
-Route::resource('/papel','papelcontroller@index');
-Route::resource('/plasticos','PlasticosController@index');
-Route::resource('/vidrio','VidriosController@index');
-Route::resource('/organicos','OrganicosController@index');
-Route::resource('/baterias','BateriaController@index');
+
 
 Route::auth();
 Route::get('/home', 'HomeController@index');

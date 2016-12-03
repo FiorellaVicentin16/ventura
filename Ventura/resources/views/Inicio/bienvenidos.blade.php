@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<style >
+	body, html {height: 100%}
+</style>
   <div class="bgimg-1">
   <div class="abajo-derecha Lato pequenio">
 	<div class="text-center">
@@ -27,9 +30,5 @@
 
   @endsection
 
-
-
-
-  
 
   

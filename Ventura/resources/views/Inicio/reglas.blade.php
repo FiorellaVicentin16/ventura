@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
+<style >
+  body, html {height: 100%}
+</style>
    <div class="Img" >
    <div class="text-center">
    <div class="col-md-12 container-reglas">

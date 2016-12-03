@@ -27,7 +27,7 @@ body, html {height: 100%}
   </p>    
   </div>
    			
-            <p class="Lato chico animated bounceInLeft naranja">Nuestro Facebook es: </p><span class="azul"><i class="fa fa-facebook-official" aria-hidden="true"></i><a class="azul" href="https://www.facebook.com/Ventura/"> Ventura</a></span><br><p class="lato medio animated bounceInLeft naranja">Y nuestro correo es:</p><span class="azul"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a class="azul"href="mailto:Learningroup@gmail.com">Learningroup16@gmail.com</a></span>
+            <p class="Lato chico animated bounceInLeft naranja">Nuestro correo es:</p><span class="azul"><i class="fa fa-envelope-o" aria-hidden="true"></i> <a class="azul"href="mailto:Learningroup@gmail.com">Learningroup16@gmail.com</a></span>
         </div>  
     </div>
   </div>

@@ -3,7 +3,8 @@
 <head>
  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/fondo.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="/css/fondo.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +12,12 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
-    <link  type="text/css" rel="stylesheet" href="../fonts/Lato">
+    <link  type="text/css" rel="stylesheet" href="/fonts/Lato">
 
     <!-- Styles -->
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
     <style>
         .margen {
             margin-left:-100px;
@@ -26,7 +27,7 @@
         }
         .top{
             margin-top:0px;
-            padding-top:20px;
+            padding-top:10px;
         }
         
     </style>
@@ -45,12 +46,10 @@
                     <span class="icon-bar"></span>
                 </button>
 
-             
-                <a href="{{ url('/bienvenidos') }}">
-                <img class="margen" src="../images/Isologotipo.png" width="180" height="100">
-                </a>
            
-      
+                  <a href="{{ url('/bienvenidos') }}">
+                <img class="logotipoo" src="/images/Isologotipo.png" > <!--Modificar en este solamente borrar los .. que estan el tuyo seguro-->
+                </a>
      
 
             </div>
@@ -79,8 +78,16 @@
             </div>
         </div>
     </nav>
-    
-    
+     @if(session('notice'))
+    <div class="alert alert-sucess">
+        <strong>{{session('notice')}}</strong>
+    </div>
+    @endif
+     @if(session('error'))
+    <div class="alert alert-danger">
+        <strong>{{session('error')}}</strong>
+    </div>
+    @endif
     @yield('content')
      
        

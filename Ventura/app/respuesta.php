@@ -10,7 +10,7 @@ class respuesta extends Model
     protected $table ='respuesta'; 
     public $timestamps=false;
 
-    function productos()
+    function pregunta()
 {
 	return $this->belongsTo('App\pregunta');
 }
